@@ -19,7 +19,7 @@ FIELDS TERMINATED BY '\054'
 LINES TERMINATED BY '\n'
 STORED AS TEXTFILE;
 
-CREATE TABLE IF NOT EXISTS genome-scores ( movieId int, tagId int, relevance double)
+CREATE TABLE IF NOT EXISTS genome_scores ( movieId int, tagId int, relevance double)
 COMMENT "Movie Genome Scores"
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY '\054'
