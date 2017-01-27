@@ -1,0 +1,13 @@
+select variance(r.rating) as RatingVariance, m.title as MovieTitle, m.movieid from ratings r , movies m
+where m.movieid = r.movieid and
+from_unixtime(`timestamp`) between "2015-01-01" and "2015-12-31"
+GROUP BY m.movieid, m.title
+ORDER BY RatingVariance DESC
+LIMIT 10
+
+
+Which 10 movies were the most controversial in 2015 (i.e., had the highest variance in
+ratings between 2015/01/01 and 2015/12/31)?
+
+Output:  	
+
