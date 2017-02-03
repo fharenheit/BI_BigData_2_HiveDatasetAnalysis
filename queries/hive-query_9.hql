@@ -1,4 +1,4 @@
-select t.tags as Tags, s.relevance as Relevance
+select t.tag as Tags, s.relevance as Relevance
 from genome_tags as t join genome_scores as s on ( t.tagid = s.tagid)
 where s.movieid = 1
 ORDER BY Relevance DESC
